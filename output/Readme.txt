@@ -1,0 +1,1 @@
+This folder is necessary to make sure that your output is created and stored in this folder.
