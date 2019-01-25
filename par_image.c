@@ -159,13 +159,7 @@ int main (int argc, char **argv)
         }
         /* Set fixed boundary conditions on the top and bottom edges
          * compute sawtooth value.
-         //sawtooth conditions
-         * condition 1: Sawtooth formula should apply to the overall image, not individual process
-         * 		This means the iterator i passed to boundaryval func should be
-         *		the value of i in the overall picture
-         * Assumption 2: This only needs to apply to top and bottom edges of the actual picture
-        		and not every part of the image. So we check for ranks with up and down
-         * 		direction being null
+         * sawtooth conditions
          */
         if (i>=1 && i<=MP) {
             sawtooth_value = i + coords[0]*MP;
